@@ -1,0 +1,29 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all");
+
+// Variables
+@import "variables";
+
+//media
+@import "media";
+
+//element ui
+@import '~element-ui/lib/theme-chalk/index.css';
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+//set default font
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-family: $base-font;
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+}
+
+
+@import "_home";

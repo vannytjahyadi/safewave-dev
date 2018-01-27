@@ -1,0 +1,51 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100%   { opacity: 1;}
+}
+
+.home-page {
+  background: url("../img/background/teaser.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    color: white;
+    margin: 0;
+
+    .logo {
+      margin-bottom: 50px;
+      width: 600px;
+      animation-name: fadeIn;
+      animation-duration: 3s;
+    }
+
+    .slogan {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 220px;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+    }
+
+    .contact {
+      font-size: 20px;
+      animation-name: fadeIn;
+      animation-duration: 3s;
+    }
+
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
