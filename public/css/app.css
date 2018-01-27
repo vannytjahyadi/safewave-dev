@@ -8418,6 +8418,12 @@ h6,
           animation-duration: 3s;
 }
 
+@media (max-width: 1199px) {
+  .home-page .wrapper .logo {
+    width: 250px;
+  }
+}
+
 .home-page .wrapper .slogan {
   font-size: 20px;
   font-weight: 300;
@@ -8428,12 +8434,24 @@ h6,
           animation-duration: 2s;
 }
 
+@media (max-width: 1199px) {
+  .home-page .wrapper .slogan {
+    font-size: 18px;
+  }
+}
+
 .home-page .wrapper .contact {
   font-size: 20px;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+}
+
+@media (max-width: 1199px) {
+  .home-page .wrapper .contact {
+    font-size: 14px;
+  }
 }
 
 .home-page .wrapper a {

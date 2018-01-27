@@ -23,6 +23,10 @@
       width: 600px;
       animation-name: fadeIn;
       animation-duration: 3s;
+
+      @include respond-to(_md) {
+        width: 250px;
+      }
     }
 
     .slogan {
@@ -31,12 +35,20 @@
       margin-bottom: 220px;
       animation-name: fadeIn;
       animation-duration: 2s;
+
+      @include respond-to(_md) {
+        font-size: 18px;
+      }
     }
 
     .contact {
       font-size: 20px;
       animation-name: fadeIn;
       animation-duration: 3s;
+
+      @include respond-to(_md) {
+        font-size: 14px;
+      }
     }
 
     a {
