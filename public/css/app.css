@@ -8369,6 +8369,14 @@ h6,
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -8389,27 +8397,88 @@ h6,
   }
 }
 
+/**
 .home-page {
-  background: url(/images/teaser.jpg?a3f43b2a607f58ddea03bc9450ada2dc) no-repeat center center fixed;
+  background: url("../img/background/teaser.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
+  align-items: center;
+  justify-content: center;
 
-.home-page .wrapper {
-  color: white;
+  .wrapper {
+    color: white;
+    margin: 0;
+
+    .logo {
+      margin-bottom: 50px;
+      width: 600px;
+      animation-name: fadeIn;
+      animation-duration: 3s;
+
+      @include respond-to(_md) {
+        width: 250px;
+      }
+    }
+
+    .slogan {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 220px;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+
+      @include respond-to(_md) {
+        font-size: 18px;
+      }
+    }
+
+    .contact {
+      font-size: 20px;
+      animation-name: fadeIn;
+      animation-duration: 3s;
+
+      @include respond-to(_md) {
+        font-size: 14px;
+      }
+    }
+
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+**/
+
+.home-page section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
   margin: 0;
+  max-width: none;
+  background-color: #373B44;
+  height: 100vh;
 }
 
-.home-page .wrapper .logo {
+.home-page .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home-page .first {
+  background: url(/images/teaser.jpg?a3f43b2a607f58ddea03bc9450ada2dc) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.home-page .first .logo {
   margin-bottom: 50px;
   width: 600px;
   -webkit-animation-name: fadeIn;
@@ -8419,12 +8488,12 @@ h6,
 }
 
 @media (max-width: 1199px) {
-  .home-page .wrapper .logo {
+  .home-page .first .logo {
     width: 250px;
   }
 }
 
-.home-page .wrapper .slogan {
+.home-page .first .slogan {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 220px;
@@ -8432,34 +8501,48 @@ h6,
           animation-name: fadeIn;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+  color: white;
 }
 
 @media (max-width: 1199px) {
-  .home-page .wrapper .slogan {
+  .home-page .first .slogan {
     font-size: 18px;
   }
 }
 
-.home-page .wrapper .contact {
+.home-page .first .contact {
   font-size: 20px;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  color: white;
 }
 
 @media (max-width: 1199px) {
-  .home-page .wrapper .contact {
+  .home-page .first .contact {
     font-size: 14px;
   }
 }
 
-.home-page .wrapper a {
+.home-page .first .contact a {
   color: white;
 }
 
-.home-page .wrapper a:hover {
+.home-page .first .contact a:hover {
   text-decoration: none;
+  color: white;
+}
+
+.home-page .second {
+  color: white;
+  height: 80vh;
+}
+
+footer {
+  padding: 1% 5%;
+  text-align: center;
+  background-color: #373B44;
   color: white;
 }
 
