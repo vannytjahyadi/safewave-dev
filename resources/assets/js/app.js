@@ -13,6 +13,9 @@ window.moment = require('moment');
 import ElementUI from 'element-ui';
 import locale from 'element-ui/lib/locale/lang/en';
 
+
+import Home from './pages/Home.vue';
+
 Vue.use(ElementUI, {locale});
 
 /**
@@ -22,6 +25,7 @@ Vue.use(ElementUI, {locale});
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('home', Home);
 
 const app = new Vue({
     el: '#app'

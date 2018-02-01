@@ -3,6 +3,9 @@
   100%   { opacity: 1;}
 }
 
+//old CSS
+
+/**
 .home-page {
   background: url("../img/background/teaser.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -60,4 +63,83 @@
       }
     }
   }
+}
+**/
+
+.home-page {
+  section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #373B44;
+    height: 100vh;
+  }
+
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .first {
+    background: url("../img/background/teaser.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+      .logo {
+        margin-bottom: 50px;
+        width: 600px;
+        animation-name: fadeIn;
+        animation-duration: 3s;
+
+        @include respond-to(_md) {
+          width: 250px;
+        }
+      }
+
+      .slogan {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 220px;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        color: white;
+
+        @include respond-to(_md) {
+          font-size: 18px;
+        }
+      }
+
+      .contact {
+        font-size: 20px;
+        animation-name: fadeIn;
+        animation-duration: 3s;
+        color: white;
+
+        @include respond-to(_md) {
+          font-size: 14px;
+        }
+
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .second {
+      color: white;
+      height: 80vh;
+    }
+}
+
+footer {
+  padding: 1% 5%;
+  text-align:center;
+  background-color: #373B44;
+  color: white;
 }
